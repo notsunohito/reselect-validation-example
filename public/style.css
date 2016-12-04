@@ -1,0 +1,48 @@
+body {
+    width: 35%;
+    margin: 0 auto;
+    padding: 5% 0 0 0;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+#title {
+    margin-left: -6%;
+}
+#title h1 {
+    display: inline;
+}
+#title .validation-icon {
+    font-size: 20px;
+}
+
+.item {
+    margin: 2% 0;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+
+.flexible {
+    flex: 1;
+}
+
+.fixed {
+    width: 20%;
+}
+
+.flex-box label {
+    font-weight: bold;
+}
+
+.validation-icon {
+    margin: 0% 1%;
+}
+.validation-icon.glyphicon-ok {
+    color: rgb(0, 204, 0);
+}
+.validation-icon.glyphicon-remove {
+    color: rgb(204, 0, 0);
+}
+
