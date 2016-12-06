@@ -27,12 +27,12 @@ describe('rootSelector', ()=> {
             })
         })
 
-        context('name, zipCode, address のうちひとつでも Error があるとき', ()=> {
+        context('name, zipCode, address のうちひとつでも ERROR があるとき', ()=> {
             beforeEach(()=> {
                 state.name = ''
             })
 
-            it('OK', ()=> {
+            it('ERROR', ()=> {
                 const {summary} = subject(state)
                 expect(summary).to.equal(ERROR)
             })
