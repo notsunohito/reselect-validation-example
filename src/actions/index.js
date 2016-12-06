@@ -22,9 +22,16 @@ function changeAddress(address) {
     };
 }
 
+function clearAll() {
+    return {
+        type: actionTypes.CLEAR_ALL
+    }
+}
+
 
 module.exports = {
     changeName,
     changeZipCode,
-    changeAddress
+    changeAddress,
+    clearAll
 }

@@ -1,12 +1,13 @@
 body {
-    width: 35%;
+    width: 100%;
     margin: 0 auto;
-    padding: 5% 0 0 0;
+    padding: 7% 25%;
     font-family: Tahoma, Verdana, Arial, sans-serif;
 }
 
 #title {
     margin-left: -6%;
+    margin-bottom: 3%;
 }
 #title h1 {
     display: inline;
@@ -15,8 +16,17 @@ body {
     font-size: 20px;
 }
 
+#main_panel {
+    width: 300px;
+}
+
+.text-input {
+    width: 60%;
+}
+
 .item {
     margin: 2% 0;
+    width: 100%;
 }
 
 .flex-box {
@@ -34,6 +44,7 @@ body {
 
 .flex-box label {
     font-weight: bold;
+    margin-right: 5%;
 }
 
 .glyphicon-ok {
@@ -70,4 +81,13 @@ body {
     border-bottom: 10px solid black;
     border-left: 10px solid transparent;
     transform: skew(0deg, -15deg);
+}
+
+#clear_button {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(66, 184, 221);
+    margin-left: 70%;
+    margin-top: 2%;
 }

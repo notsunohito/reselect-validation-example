@@ -26,6 +26,9 @@ function MainPanel(props) {
                 <TextInput value={state.address} onChange={actions.changeAddress} />
                 <ValidationIcon status={validation.address} />
             </div>
+            <div className="flex-box">
+                <button id="clear_button" className="pure-button" onClick={actions.clearAll}>Clear</button>
+            </div>
         </div>
     )
 }

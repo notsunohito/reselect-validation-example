@@ -12,6 +12,7 @@ function rootReducer(state= initialState, action) {
         case actionTypes.CHANGE_NAME: return Object.assign({}, state, {name: action.name})
         case actionTypes.CHANGE_ZIP_CODE: return Object.assign({}, state, {zipCode: action.zipCode})
         case actionTypes.CHANGE_ADDRESS: return Object.assign({}, state, {address: action.address})
+        case actionTypes.CLEAR_ALL: return Object.assign({}, state, {name: '', zipCode: '', address: ''})
         default:
             return state
     }
