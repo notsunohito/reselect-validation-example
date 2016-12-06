@@ -36,13 +36,38 @@ body {
     font-weight: bold;
 }
 
-.validation-icon {
-    margin: 0% 1%;
-}
-.validation-icon.glyphicon-ok {
+.glyphicon-ok {
     color: rgb(0, 204, 0);
 }
-.validation-icon.glyphicon-remove {
+.glyphicon-remove {
     color: rgb(204, 0, 0);
 }
 
+.validation-icon {
+    margin: 0% 1%;
+    position: relative;
+    display: inline;
+}
+
+.message-tooltip {
+    position: absolute;
+    width: auto;
+    top: -26px;
+    left: 20px;
+    font-size: 11px;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    text-align: center;
+    padding: 3px 7px;
+    white-space: nowrap;
+}
+
+.message-tooltip-triangle {
+    position: absolute;
+    top: -14px;
+    left: 12px;
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+    transform: skew(0deg, -15deg);
+}

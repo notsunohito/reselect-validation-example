@@ -3,6 +3,8 @@ const {
     createStructuredSelector
 } = require('reselect');
 const validator = require('./validator');
+const {validationStatus} = require('../constants');
+const {OK, ERROR, isOK} = validationStatus;
 
 
 const nameSelector = createSelector(
@@ -25,7 +27,7 @@ const summarySelector = createSelector(
     nameSelector,
     zipCodeSelector,
     addressSelector,
-    (name, zipCode, address)=> [zipCode, address, name].every((value)=> value === 'OK') ? 'OK' : 'ERROR'
+    (name, zipCode, address)=> [zipCode, address, name].every((status)=> isOK(status)) ? OK : ERROR
 )
 
 // どのプロパティにどのselectorを対応させるかをここで設定
