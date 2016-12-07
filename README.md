@@ -1,3 +1,7 @@
+$`npm install`
+
+then
+
 $`npm start`
 
 or
